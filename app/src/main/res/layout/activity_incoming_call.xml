@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clMainContainer"
+    android:paddingLeft="@dimen/dimen_20dp"
+    android:paddingRight="@dimen/dimen_20dp"
+    android:paddingTop="@dimen/dimen_20dp"
+    tools:context=".IncomingCallActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/call_from"
+        android:textSize="@dimen/size_16sp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/tvHCallFrom"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvHCallFrom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Abhishek"
+        android:textSize="50sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/tvCallerName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCallerName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textAlignment="center"
+        android:text="Mobile - (9571058866)"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/tvCallerID"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/view_rounded_border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_message_24dp"
+        android:text="Message"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/tvMessage"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabIncomingCall"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        app:elevation="5dp"
+        app:fabCustomSize="70dp"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_call_24dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

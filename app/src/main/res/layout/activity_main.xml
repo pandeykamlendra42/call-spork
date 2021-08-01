@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clMainContainer"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_margin="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tvErrorMessage"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14sp"
+        android:text="Message can't be empty and It must contains CONTACT_NAME keyword at least on time."
+        />
+
+    <EditText
+        android:id="@+id/etCallingSpeech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rounded_widget"
+        android:minLines="8"
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_widget"
+        android:text="@string/save_changes"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/etCallingSpeech" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

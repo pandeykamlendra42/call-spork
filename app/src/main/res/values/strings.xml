@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ManageTunes</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="call_from">Call from</string>
+    <string name="enter_contact_number">Enter Contact Number</string>
+    <string name="enter_contact_name">Enter Contact Name</string>
+</resources>
